@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PocketWise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div>
+          <span class="logo"> PocketWi</span
+          ><img
+            src="images/currency-circle-dollar.png"
+            class="dollarsign"
+          /><span class="logo">e</span>
+        </div>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li>
+              <a href="#features-section">Features</a>
+            </li>
+            <li>
+              <a href="#reviews-section">Reviews</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+          </ul>
+          <div class="header-btns-container">
+            <button class="login-btn">LogIn</button>
+            <button class="demo-btn">Try Demo</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="doc-container">
+      <section>
+        <div class="intro-container">
+          <div>
+            <h1 class="intro-maintext">
+              Say <span class="intro-maintext-highlight">goodbye</span> to
+              financial stress
+            </h1>
+            <div class="intro-subtext">
+              By providing a simple and intuitive way to manage your money, you
+              can easily stay on top of your expenses and reach your savings
+              goals. Take your first step on financial freedom.
+            </div>
+            <div>
+              <a href="#" class="googleplay-btn">
+                <img src="images/googleplay_badge.png" class="badges" />
+              </a>
+              <a href="#" class="apple-btn">
+                <img src="images/applestore_badge.png" class="badges" />
+              </a>
+            </div>
+          </div>
+          <img src="images/undraw_transfer_money.png" class="intro-image" />
+        </div>
+      </section>
+
+      <div class="ads-container">
+        <div class="ads">
+          <svg
+            class="ads-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="var(--brand-color-1)"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <circle
+              cx="128"
+              cy="128"
+              r="48"
+              fill="none"
+              stroke="var(--brand-color-1)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></circle>
+            <path
+              d="M197.4,80.7a73.6,73.6,0,0,1,6.3,10.9L229.6,106a102,102,0,0,1,.1,44l-26,14.4a73.6,73.6,0,0,1-6.3,10.9l.5,29.7a104,104,0,0,1-38.1,22.1l-25.5-15.3a88.3,88.3,0,0,1-12.6,0L96.3,227a102.6,102.6,0,0,1-38.2-22l.5-29.6a80.1,80.1,0,0,1-6.3-11L26.4,150a102,102,0,0,1-.1-44l26-14.4a73.6,73.6,0,0,1,6.3-10.9L58.1,51A104,104,0,0,1,96.2,28.9l25.5,15.3a88.3,88.3,0,0,1,12.6,0L159.7,29a102.6,102.6,0,0,1,38.2,22Z"
+              fill="none"
+              stroke="var(--brand-color-1)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></path>
+          </svg>
+
+          <h3 class="ads-maintext">Take control of your finances with ease</h3>
+          <p class="ads-subtext">
+            Our app makes budgeting simple and stress-free
+          </p>
+        </div>
+
+        <div class="ads">
+          <svg
+            class="ads-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="var(--brand-color-1)"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <polyline
+              points="224 208 32 208 32 48"
+              fill="none"
+              stroke="var(--brand-color-1)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+            <polyline
+              points="224 96 160 152 96 104 32 160"
+              fill="none"
+              stroke="var(--brand-color-1)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+          </svg>
+
+          <h3 class="ads-maintext">Real-time insights</h3>
+          <p class="ads-subtext">See where your money is going at a glance.</p>
+        </div>
+
+        <div class="ads">
+          <svg
+            class="ads-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="var(--brand-color-1)"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <path
+              d="M40,64V192a16,16,0,0,0,16,16H216a8,8,0,0,0,8-8V88a8,8,0,0,0-8-8H56A16,16,0,0,1,40,64h0A16,16,0,0,1,56,48H192"
+              fill="none"
+              stroke="var(--brand-color-1)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></path>
+            <circle cx="180" cy="144" r="12"></circle>
+          </svg>
+          <h3 class="ads-maintext">Get on the path to savings success</h3>
+          <p class="ads-subtext">
+            Our app will help you stick to your budget and reach your financial
+            goals.
+          </p>
+        </div>
+      </div>
+
+      <div class="question-container">
+        <p class="question-text">How to get your money</p>
+        <h2 class="question-text">money into shape?</h2>
+      </div>
+
+      <div class="step-section-container">
+        <div class="step-container">
+          <div class="step">Step 1</div>
+          <h3 class="step-maintext">Track your cashflow</h3>
+          <div class="step-list-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="var(--brand-color-1)"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="216 72 104 184 48 128"
+                fill="none"
+                stroke="var(--brand-color-1)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></polyline>
+            </svg>
+            <svg
+              class="svg2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="var(--brand-color-1)"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="216 72 104 184 48 128"
+                fill="none"
+                stroke="var(--brand-color-1)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></polyline>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="var(--brand-color-1)"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="216 72 104 184 48 128"
+                fill="none"
+                stroke="var(--brand-color-1)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></polyline>
+            </svg>
+            <div class="step-list-item-1 step-list-items">
+              Connect your bank accounts and all your transactions will get
+              automatically imported to PocketWise.
+            </div>
+            <div class="step-list-item-2 step-list-items">
+              Connect your crypto wallet and E-Wallet for complete overview of
+              your cash flow.
+            </div>
+            <div class="step-list-item-3 step-list-items">
+              Add your cash expenses manually.
+            </div>
+          </div>
+        </div>
+        <img
+          src="images/undraw_Spreadsheet.png"
+          class="step-1-image step-images"
+        />
+      </div>
+
+      <div class="step-section-container">
+        <img src="images/undraw_Charts.png" class="step-2-image step-images" />
+        <div class="step-container">
+          <div class="step">Step 2</div>
+          <h3 class="step-maintext">Understand your finnacial habits</h3>
+          <div class="step-list-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="var(--brand-color-1)"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="216 72 104 184 48 128"
+                fill="none"
+                stroke="var(--brand-color-1)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></polyline>
+            </svg>
+            <svg
+              class="svg2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="var(--brand-color-1)"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="216 72 104 184 48 128"
+                fill="none"
+                stroke="var(--brand-color-1)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></polyline>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="var(--brand-color-1)"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="216 72 104 184 48 128"
+                fill="none"
+                stroke="var(--brand-color-1)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></polyline>
+            </svg>
+            <div class="step-list-item-1 step-list-items">
+              Analyze your finance with beautiful, simple and easy to understand
+              graphic. No need for complicated Excel sheets.
+            </div>
+            <div class="step-list-item-2 step-list-items">
+              See where your money goes and where they come from every month.
+            </div>
+            <div class="step-list-item-3 step-list-items">
+              See whether you spend less than you earn in one place and on 1
+              tap.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-section-container">
+        <div class="step-container">
+          <div class="step">Step 3</div>
+          <h3 class="step-maintext">Make your spending stress–free</h3>
+          <div class="step-list-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="var(--brand-color-1)"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="216 72 104 184 48 128"
+                fill="none"
+                stroke="var(--brand-color-1)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></polyline>
+            </svg>
+            <svg
+              class="svg2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="var(--brand-color-1)"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="216 72 104 184 48 128"
+                fill="none"
+                stroke="var(--brand-color-1)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></polyline>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="var(--brand-color-1)"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="216 72 104 184 48 128"
+                fill="none"
+                stroke="var(--brand-color-1)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></polyline>
+            </svg>
+            <div class="step-list-item-1 step-list-items">
+              Set smart budgets to help you not to overspend in chosen category.
+            </div>
+            <div class="step-list-item-2 step-list-items">
+              Know how much you can spend daily in order to stick to your
+              budget.
+            </div>
+            <div class="step-list-item-3 step-list-items">
+              Save money for your future dreams.
+            </div>
+          </div>
+        </div>
+        <img
+          src="images/undraw_Relaxing_at_home.png"
+          class="step-3-image step-images"
+        />
+      </div>
+
+      <section id="features-section">
+        <div class="features-text-container">
+          <h2 class="features-text">Features</h2>
+        </div>
+
+        <div class="features-section">
+          <div class="features-container">
+            <div class="image-container">
+              <img class="features-icon" src="images/currency-dollar.png" />
+            </div>
+            <div>
+              <h3 class="features-maintext">Spending tracking</h3>
+              <p class="features-subtext">
+                Record expenses and categorize them for better insight into
+                spending habits.
+              </p>
+            </div>
+          </div>
+          <div class="features-container">
+            <div class="image-container">
+              <img class="features-icon" src="images/note-pencil.png" />
+            </div>
+            <div>
+              <h3 class="features-maintext">Budget creation</h3>
+              <p class="features-subtext">
+                Establish a budget and receive alerts when near budget limit.
+              </p>
+            </div>
+          </div>
+          <div class="features-container">
+            <div class="image-container">
+              <img class="features-icon" src="images/map-trifold.png" />
+            </div>
+            <div>
+              <h3 class="features-maintext">Financial goal setting</h3>
+              <p class="features-subtext">
+                Set financial goals and track progress towards them with
+                provided tools.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews-section">
+        <div class="reviews-text-container">
+          <h2 class="reviews-text">Reviews</h2>
+        </div>
+
+        <section>
+          <div class="reviews-container">
+            <div class="review">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+              nesciunt aliquid ex atque quibusdam. Rerum officia unde suscipit
+              quo sunt hic illo fugit."
+            </div>
+            <div class="review-author">Sarah Johnson</div>
+            <div class="review-job">Marketing Manager</div>
+            <div class="buttons">
+              <button class="buttons-carousel button-carousel-active slide-0">
+                &nbsp;
+              </button>
+              <button class="buttons-carousel slide-1">&nbsp;</button>
+              <button class="buttons-carousel slide-2">&nbsp;</button>
+              <button class="buttons-carousel slide-3">&nbsp;</button>
+            </div>
+            <button class="button-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="#1d4ed8"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="216"
+                  y1="128"
+                  x2="40"
+                  y2="128"
+                  fill="none"
+                  stroke="#1d4ed8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <polyline
+                  points="112 56 40 128 112 200"
+                  fill="none"
+                  stroke="#1d4ed8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+              </svg>
+            </button>
+
+            <button class="button-right">
+              <svg
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="#1d4ed8"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="40"
+                  y1="128"
+                  x2="216"
+                  y2="128"
+                  fill="none"
+                  stroke="#1d4ed8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <polyline
+                  points="144 56 216 128 144 200"
+                  fill="none"
+                  stroke="#1d4ed8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+              </svg>
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <footer>Copyright &copy; 2023 Jlscripts. All rights reserved.</footer>
+
+      <div class="modal modal-container hidden">
+        <div>
+          <div class="modal-maintext"><b>Login</b> to PocketWise</div>
+          <div class="modal-subtext-container">
+            <span class="modal-subtext">Don't have an account yet?&nbsp;</span>
+            <a href="#">Sign Up here!</a>
+          </div>
+        </div>
+        <form class="login-details-contaienr">
+          <div>
+            <div>
+              <label class="form-label">E-mail address</label>
+            </div>
+            <input type="text" class="inputfield" />
+          </div>
+          <div>
+            <div>
+              <label class="form-label">Password</label>
+            </div>
+            <input type="text" class="inputfield" />
+          </div>
+          <div class="forgot-password-container">
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+          <div>
+            <button class="signin-with-buttons">
+              <span class="signin-buttons-text">Sign In with PocketWise</span>
+            </button>
+          </div>
+        </form>
+
+        <div class="orlogin-container">...or login via</div>
+        <div class="signin-container">
+          <div>
+            <button class="signin-with-buttons">
+              <img
+                src="images/facebook.png"
+                class="signin-icons"
+                height="15px"
+                width="15px"
+              />
+              <span class="signin-buttons-text">Sign In with Facebook</span>
+            </button>
+          </div>
+          <div>
+            <button class="signin-with-buttons">
+              <img
+                src="images/google.png"
+                class="signin-icons"
+                height="15px"
+                width="15px"
+              />
+              <span class="signin-buttons-text">Sign In with Google</span>
+            </button>
+          </div>
+          <div>
+            <button class="signin-with-buttons">
+              <img
+                src="images/apple.png"
+                class="signin-icons"
+                height="15px"
+                width="15px"
+              />
+              <span class="signin-buttons-text">Sign In with Apple</span>
+            </button>
+          </div>
+        </div>
+        <button class="close-btn">X</button>
+      </div>
+      <div class="overlay hidden">&nbsp;</div>
+      <div class="notice-container hidden">
+        <p class="notice">Coming soon!</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+@media (min-width: 1500px) {
+  .header-container,
+  .doc-container {
+    max-width: 123rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+
+  .intro-maintext {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media (max-width: 550px) {
+  .intro-container {
+    flex-direction: column-reverse;
+  }
+
+  .intro-image {
+    display: none;
+  }
+
+  .ads-container {
+    flex-direction: column;
+  }
+
+  .ads {
+    max-width: 100%;
+  }
+
+  .features-section {
+    flex-direction: column-reverse;
+  }
+
+  .features-container {
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+
+  .image-container {
+    width: 7rem;
+    height: 7rem;
+  }
+}
