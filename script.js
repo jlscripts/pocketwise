@@ -17,13 +17,25 @@ const openModal = function (e) {
 
 btnLogIn.addEventListener("click", openModal);
 
-const closeModal = function (e) {
-  e.preventDefault;
+const removeHidden = function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 };
 
+const closeModal = function (e) {
+  e.preventDefault;
+  removeHidden();
+};
+
 btnClose.addEventListener("click", closeModal);
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape")
+    if (
+      !modal.classList.contains("hidden") &&
+      !overlay.classList.contains("hidden")
+    )
+      removeHidden();
+});
 
 const hideNotice = function () {
   notice.classList.add("hidden");
