@@ -8,6 +8,7 @@ const overlay = document.querySelector(".overlay");
 const notice = document.querySelector(".notice-container");
 const btnGoogleplay = document.querySelector(".googleplay-btn");
 const btnApple = document.querySelector(".apple-btn");
+const comingSoon = document.querySelectorAll(".coming-soon");
 
 const openModal = function (e) {
   e.preventDefault();
@@ -39,7 +40,8 @@ document.addEventListener("keydown", function (e) {
 
 const hideNotice = function () {
   notice.classList.add("hidden");
-  overlay.classList.add("hidden");
+
+  if (modal.classList.contains("hidden")) overlay.classList.add("hidden");
 };
 
 const showNotice = function (e) {
@@ -50,6 +52,13 @@ const showNotice = function (e) {
   setTimeout(hideNotice, 2000);
 };
 
-btnDemo.addEventListener("click", showNotice);
-btnGoogleplay.addEventListener("click", showNotice);
-btnApple.addEventListener("click", showNotice);
+// btnDemo.addEventListener("click", showNotice);
+// btnGoogleplay.addEventListener("click", showNotice);
+// btnApple.addEventListener("click", showNotice);
+
+// const
+
+comingSoon.forEach(function (element) {
+  console.log(element);
+  element.addEventListener("click", showNotice);
+});
