@@ -40,7 +40,6 @@ document.addEventListener("keydown", function (e) {
 
 const hideNotice = function () {
   notice.classList.add("hidden");
-
   if (modal.classList.contains("hidden")) overlay.classList.add("hidden");
 };
 
@@ -52,13 +51,6 @@ const showNotice = function (e) {
   setTimeout(hideNotice, 2000);
 };
 
-// btnDemo.addEventListener("click", showNotice);
-// btnGoogleplay.addEventListener("click", showNotice);
-// btnApple.addEventListener("click", showNotice);
-
-// const
-
 comingSoon.forEach(function (element) {
-  console.log(element);
   element.addEventListener("click", showNotice);
 });
