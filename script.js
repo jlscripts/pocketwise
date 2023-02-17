@@ -1,13 +1,10 @@
 "use strict";
 
 const btnLogIn = document.querySelector(".login-btn");
-const btnDemo = document.querySelector(".demo-btn");
 const btnClose = document.querySelector(".close-btn");
 const modal = document.querySelector(".modal-container");
 const overlay = document.querySelector(".overlay");
 const notice = document.querySelector(".notice-container");
-const btnGoogleplay = document.querySelector(".googleplay-btn");
-const btnApple = document.querySelector(".apple-btn");
 const comingSoon = document.querySelectorAll(".coming-soon");
 
 const openModal = function (e) {
@@ -53,4 +50,10 @@ const showNotice = function (e) {
 
 comingSoon.forEach(function (element) {
   element.addEventListener("click", showNotice);
+});
+
+Ascending;
+movements.sort((a, b) => {
+  if (a > b) return 1;
+  if (a < b) return -1;
 });
