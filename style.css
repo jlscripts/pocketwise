@@ -314,17 +314,29 @@ a {
   background-color: var(--brand-color-1);
 }
 
-.reviews-container {
-  position: relative;
+#reviews-section {
+  overflow: hidden;
+  padding: 0rem 5rem;
 }
 
-.review,
+.reviews-container {
+  position: relative;
+  height: 22rem;
+}
+
+.review {
+  position: absolute;
+  width: 80%;
+  transition: transform 0.8s;
+}
+
+.review-text,
 .review-author,
 .review-job {
   color: var(--brand-color-3);
 }
 
-.review {
+.review-text {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 2rem;

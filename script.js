@@ -2,10 +2,14 @@
 
 const btnLogIn = document.querySelector(".login-btn");
 const btnClose = document.querySelector(".close-btn");
+const btnLeft = document.querySelector(".button-left");
+const btnRight = document.querySelector(".button-right");
+const btnCarousel = document.querySelectorAll(".buttons-carousel");
 const modal = document.querySelector(".modal-container");
 const overlay = document.querySelector(".overlay");
 const notice = document.querySelector(".notice-container");
 const comingSoon = document.querySelectorAll(".coming-soon");
+const reviews = document.querySelectorAll(".review");
 
 const openModal = function (e) {
   e.preventDefault();
@@ -52,8 +56,37 @@ comingSoon.forEach(function (element) {
   element.addEventListener("click", showNotice);
 });
 
-Ascending;
-movements.sort((a, b) => {
-  if (a > b) return 1;
-  if (a < b) return -1;
+reviews.forEach(function (slide, index) {
+  slide.style.transform = `translateX(${100 * index}%)`;
+});
+
+let curSlide = 0;
+
+const moveCarousel = function () {
+  btnCarousel.forEach((element) => {
+    element.classList.remove("button-carousel-active");
+  });
+  btnCarousel[curSlide].classList.add("button-carousel-active");
+};
+
+const moveSlide = function () {
+  reviews.forEach(function (slide, index) {
+    slide.style.transform = `translateX(${100 * (index - curSlide)}%)`;
+    slide.classList.add("hidden");
+  });
+  reviews[curSlide].classList.remove("hidden");
+};
+
+btnRight.addEventListener("click", function () {
+  if (curSlide === 2) curSlide = -1;
+  curSlide++;
+  moveSlide();
+  moveCarousel();
+});
+
+btnLeft.addEventListener("click", function () {
+  if (curSlide === 0) curSlide = 3;
+  curSlide--;
+  moveSlide();
+  moveCarousel();
 });
